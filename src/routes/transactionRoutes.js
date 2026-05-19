@@ -70,6 +70,25 @@ router.get(
 );
 
 
+/**
+ * @swagger
+ * /api/transactions/{id}:
+ *   get:
+ *     summary: Get single transaction
+ *     tags: [Transactions]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Transaction fetched successfully
+ */
+
 // GET SINGLE TRANSACTION
 router.get(
   "/:id",
@@ -78,6 +97,25 @@ router.get(
 );
 
 
+/**
+ * @swagger
+ * /api/transactions/{id}:
+ *   put:
+ *     summary: Update transaction
+ *     tags: [Transactions]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Transaction updated successfully
+ */
+
 // UPDATE TRANSACTION
 router.put(
   "/:id",
@@ -85,6 +123,25 @@ router.put(
   updateTransaction
 );
 
+
+/**
+ * @swagger
+ * /api/transactions/{id}:
+ *   delete:
+ *     summary: Delete transaction
+ *     tags: [Transactions]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Transaction deleted successfully
+ */
 
 // DELETE TRANSACTION
 router.delete(

@@ -18,6 +18,19 @@ const router = express.Router();
  */
 
 
+/**
+ * @swagger
+ * /api/analytics/overview:
+ *   get:
+ *     summary: Get overall analytics
+ *     tags: [Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Analytics fetched successfully
+ */
+
 // OVERALL ANALYTICS
 router.get(
   "/overview",
@@ -26,6 +39,19 @@ router.get(
 );
 
 
+/**
+ * @swagger
+ * /api/analytics/categories:
+ *   get:
+ *     summary: Get category breakdown analytics
+ *     tags: [Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Category breakdown fetched successfully
+ */
+
 // CATEGORY BREAKDOWN
 router.get(
   "/categories",
@@ -33,6 +59,19 @@ router.get(
   getCategoryBreakdown
 );
 
+
+/**
+ * @swagger
+ * /api/analytics/monthly:
+ *   get:
+ *     summary: Get monthly analytics summary
+ *     tags: [Analytics]
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200:
+ *         description: Monthly analytics fetched successfully
+ */
 
 // MONTHLY SUMMARY
 router.get(

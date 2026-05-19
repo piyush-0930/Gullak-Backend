@@ -1,5 +1,9 @@
 # Gullak Backend API
 
+[![Live API](https://img.shields.io/badge/Live%20API-Online-green)](https://gullak-backend-api.onrender.com/)
+[![Swagger Docs](https://img.shields.io/badge/Swagger-Documentation-brightgreen)](https://gullak-backend-api.onrender.com/api-docs)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/piyush-0930/Gullak-Backend)
+
 Professional backend API for Gullak Expense Tracker Application built using Node.js, Express.js, MongoDB, and JWT Authentication.  
 This API provides secure authentication, transaction management, category management, analytics, filtering, pagination, and Swagger API documentation.
 
@@ -81,8 +85,6 @@ npm install
 Create a `.env` file in the root directory and add:
 
 ```env
-PORT=5000
-
 MONGO_URI=your_mongodb_connection_string
 
 JWT_SECRET=your_secret_key
@@ -110,7 +112,7 @@ npm start
 
 ---
 
-# Swagger Documentation
+# Swagger API Documentation
 
 After starting the server:
 
@@ -301,7 +303,17 @@ NODE_ENV=production
 
 ---
 
-# GitHub Repository
+# Live Project
+
+## Live API
+
+https://gullak-backend-api.onrender.com/
+
+## Swagger API Documentation
+
+https://gullak-backend-api.onrender.com/api-docs
+
+## GitHub Repository
 
 https://github.com/piyush-0930/Gullak-Backend
 
